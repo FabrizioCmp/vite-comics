@@ -12,6 +12,8 @@
   <body>
       <Header></Header>
       <ContentSection></ContentSection>
+      <Bunner></Bunner>
+      <Footer></Footer>
   </body>
 
   </html>

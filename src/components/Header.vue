@@ -7,7 +7,7 @@
 
             <div class="menu">
                 <ul>
-                    <li v-for="menuitem in listMenu"><a href=""></a>{{ menuitem.toUpperCase() }}</li>
+                    <li v-for="menuitem in listMenu"><a href="#"></a>{{ menuitem.toUpperCase() }}</li>
                 </ul>
             </div>
         </div>
@@ -29,6 +29,7 @@ export default {
                 "videos",
                 "fans",
                 "news",
+                "shop",
             ]
         }
     }
