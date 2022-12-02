@@ -57,10 +57,12 @@ export default {
     &>ul {
         display: flex;
         list-style: none;
-        column-gap: .5rem;
+        column-gap: 1.5rem;
         align-items: center;
         padding: 0;
         margin: 0;
+        font-weight: 600;
+        font-size: .8rem;
     }
 }
 </style>
