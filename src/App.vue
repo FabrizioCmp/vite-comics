@@ -15,6 +15,12 @@
 
 <!-- **************** JS ****************  -->
 <script>
+import Header from './components/Header.vue';
+import ContentSection from './components/ContentSection.vue';
+import Bunner from './components/Bunner.vue';
+import Footer from './components/Footer.vue';
+import FooterSocial from './components/FooterSocial.vue';
+
 export default {
   data() {
     return {
