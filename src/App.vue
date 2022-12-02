@@ -14,6 +14,7 @@
       <ContentSection></ContentSection>
       <Bunner></Bunner>
       <Footer></Footer>
+      <FooterSocial></FooterSocial>
   </body>
 
   </html>

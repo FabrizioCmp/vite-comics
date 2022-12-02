@@ -58,6 +58,9 @@ export default {
         display: flex;
         list-style: none;
         column-gap: .5rem;
+        align-items: center;
+        padding: 0;
+        margin: 0;
     }
 }
 </style>

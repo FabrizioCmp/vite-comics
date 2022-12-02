@@ -114,6 +114,6 @@ export default {
     flex-grow: 1;
     background-image: url("/imgs/dc-logo-bg.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right ;
 }
 </style>
