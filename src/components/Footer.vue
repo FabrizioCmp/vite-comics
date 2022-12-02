@@ -1,6 +1,6 @@
 <template>
     <div class="footer_section">
-        <div class="container d-felx">
+        <div class="container d-flex">
             <div class="links_box">
                 <div class="links_column">
                     <div class="footer_title">DC COMICS</div>
@@ -25,7 +25,8 @@
                     </ul>
                 </div>
             </div>
-            <div></div>
+            <div class="dc_logo_box">
+            </div>
         </div>
     </div>
 
@@ -77,8 +78,9 @@ export default {
 
 <style scoped lang="scss">
 .footer_section {
-    background-color: black;
-    background-image: url();
+    background-image: url("/imgs/footer-bg.jpg");
+    overflow: hidden;
+    max-height: 500px;
 }
 
 .links_box {
@@ -88,7 +90,7 @@ export default {
 
 .links_column {
     width: calc(100% / 3);
-
+    flex-shrink: 0;
     &>ul {
         list-style: none;
         padding: 0;
@@ -106,5 +108,12 @@ export default {
     font-weight: 700;
     margin: 10px 0;
 
+}
+
+.dc_logo_box{
+    flex-grow: 1;
+    background-image: url("/imgs/dc-logo-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 </style>
