@@ -46,7 +46,7 @@ export default {
     padding: .3rem .5rem;
     border: 2px solid #0282F9;
 
-    &>a {
+    a {
         text-decoration: none;
         color: white;
         font-size: .8rem;
@@ -57,12 +57,12 @@ export default {
     display: flex;
     align-items: center;
 
-    &>h5 {
+    h5 {
         color: #0282F9;
         margin: 0;
     }
 
-    & > ul{
+    ul{
         display: flex;
         align-items: center;
         column-gap: 20px;

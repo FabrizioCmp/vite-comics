@@ -7,7 +7,7 @@
 
             <div class="menu">
                 <ul>
-                    <li v-for="menuitem in listMenu"><a href="#"></a>{{ menuitem.toUpperCase() }}</li>
+                    <li v-for="menuitem in listMenu"><a href="#">{{ menuitem.toUpperCase() }}</a></li>
                 </ul>
             </div>
         </div>
@@ -44,17 +44,17 @@ export default {
     justify-content: space-between;
     align-items: center;
 
-    &>.icon_dc {
+    .icon_dc {
         height: 100%;
 
-        &>img {
+        img {
             height: 100%;
         }
     }
 }
 
 .menu {
-    &>ul {
+    ul {
         display: flex;
         list-style: none;
         column-gap: 1.5rem;
@@ -63,6 +63,11 @@ export default {
         margin: 0;
         font-weight: 600;
         font-size: .8rem;
+        
+        li > a{
+            text-decoration: none;
+            color: black;
+        }
     }
 }
 </style>

@@ -63,15 +63,15 @@ export default {
     align-items: center;
     column-gap: 1rem;
 
-    & > span{
+    span{
         font-size: .8rem;
         color: white;
     }
 
-    & > div{
+    div{
         height:  50px;
         
-        & > img{
+        img{
             
             height: 100%;
         }

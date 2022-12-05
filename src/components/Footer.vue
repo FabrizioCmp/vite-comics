@@ -91,11 +91,11 @@ export default {
 .links_column {
     width: calc(100% / 3);
     flex-shrink: 0;
-    &>ul {
+    ul {
         list-style: none;
         padding: 0;
 
-        &>li>a {
+        li>a {
             text-decoration: none;
             color: gray;
         }
