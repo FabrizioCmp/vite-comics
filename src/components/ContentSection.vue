@@ -1,19 +1,22 @@
 <template>
     <div class="bkg_jumbo"></div>
     <div class="content_section">
-        
+
         <div class="container">
             <div class="content_box">
                 <div class="content_title">CURRENT SERIES</div>
                 <div class="cards_box">
                     <div class="row flex-wrap">
-                        <div v-for="item in contentList" class="col-2" :key="(item.series + i)">
+                        <div v-for="item, i in contentList" class="col-2" :key="(item.series + i)">
                             <div class="my_card">
+
                                 <img :src="item.thumb" alt="">
-                                <div>{{item.series}}</div>
+
+                                <div>{{ item.series.toUpperCase() }}</div>
                             </div>
-                        </div>
+                        </div>   
                     </div>
+                    <button class="btn_load_more">LOAD MORE</button>
                 </div>
             </div>
         </div>
@@ -31,8 +34,8 @@ export default {
             contentList: myjson
         }
     },
-    methods:{
-        
+    methods: {
+
     }
 }
 </script>
@@ -56,23 +59,41 @@ export default {
     display: flex;
     align-items: center;
     position: relative;
-        .content_title{
-            position: absolute;
-            top: -20px;
-            background-color:  #0282F9;
-            padding: .5rem 2rem;
-            font-weight: 700;
-        }
+
+    .content_title {
+        position: absolute;
+        top: -20px;
+        background-color: #0282F9;
+        padding: .5rem 2rem;
+        font-weight: 700;
+    }
 }
-.cards_box{
+
+.cards_box {
     width: 100%;
     margin-top: 3rem;
 }
 
-.my_card{
-    img{
+.my_card {
+    img {
         object-fit: cover;
-        height: 200px;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-position:  0% 0%;
     }
+    div{
+        padding: 1rem 0;
+        font-size: .8rem;
+    }
+}
+
+.btn_load_more{
+    margin: 1.5rem auto;
+    display: block;
+    background-color: #0282F9;
+    color: white;
+    font-weight: 700;
+    padding: .5rem 4rem;
+    border: none;
 }
 </style>
