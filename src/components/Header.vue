@@ -7,7 +7,7 @@
 
             <div class="menu">
                 <ul>
-                    <li v-for="menuitem in listMenu"><a href="#">{{ menuitem.toUpperCase() }}</a></li>
+                    <li v-for="menuitem,i in listMenu" :key="menuitem + i"><a href="#">{{ menuitem.toUpperCase() }}</a></li>
                 </ul>
             </div>
         </div>

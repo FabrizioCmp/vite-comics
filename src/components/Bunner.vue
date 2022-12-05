@@ -2,7 +2,7 @@
     <div class="bunner_section">
         <div class="container h-100">
             <div class="bunner">
-                <div v-for="obj in listBuy" class="mycol">
+                <div v-for="obj,i in listBuy" class="mycol" :key="(obj.text + i)">
                     <div>
                         <img class="img-fluid" :src="`/imgs/${obj.img}`" alt="">
                     </div>
@@ -54,6 +54,7 @@ export default {
 .bunner {
     height: 150px;
     display: flex;
+    
     width: 100%;
 }
 
@@ -69,7 +70,7 @@ export default {
     }
 
     div{
-        height:  50px;
+        height:  40px;
         
         img{
             
